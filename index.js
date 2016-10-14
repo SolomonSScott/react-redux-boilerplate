@@ -1,7 +1,8 @@
 import react from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('myDiv')
-);
+// Document reference
+const rootDiv = document.getElementById('myDiv');
+
+
+render( <h1>Hello, world!</h1>, rootDiv );
